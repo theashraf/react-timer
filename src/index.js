@@ -6,8 +6,8 @@ const ReactTimer = ({
   start = 0,
   end = () => true,
   interval = 1000,
-  onEnd = () => { },
-  onTick = () => { }
+  onEnd = () => {},
+  onTick = () => {}
 }) => {
   const [value, setValue] = useState(start)
   const timerRef = useRef()

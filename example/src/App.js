@@ -7,11 +7,11 @@ export default class App extends Component {
       <div>
         <ReactTimer
           start={30}
-          end={(value) => value < 25}
-          onEnd={(value) => console.log('ENDED WITH VALUE', value)}
-          onTick={(value) => value - 1}
+          end={value => value < 25}
+          onEnd={value => console.log('ENDED WITH VALUE', value)}
+          onTick={value => value - 1}
         >
-          {(time) => <div>{time}</div>}
+          {time => <div>{time}</div>}
         </ReactTimer>
       </div>
     )
